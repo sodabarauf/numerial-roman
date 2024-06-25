@@ -88,7 +88,7 @@ body {
 #convert-btn:hover{
   background-color: transparent;
   color: #00aced;
-  box-shadow: 0 5px 3px -3px #00aced;
+  box-shadow: 5px 5px 5px 5px #00aced;
 }
 
 .romanResult {
