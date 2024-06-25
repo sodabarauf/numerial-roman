@@ -9,23 +9,21 @@ function convertToRoman(num) {
       num -= map[i];                    
     }
   }
-
   return roman;                         
 }
 
 console.log(convertToRoman(55));
-
 let convertBtnEvent = document.getElementById("convert-btn");       
 
 convertBtnEvent.addEventListener("click", function() { 
-    'use strict';                                                       
+  'use strict';                                                       
 
-    let value = document.getElementById("number").value;  
-    let output = document.getElementById("output");         
+  let value = document.getElementById("number").value;  
+  let output = document.getElementById("output");         
 
-    if(convertToRoman(value ==='' )) {                                      
-      output.innerHTML = "please enter a valid number";
-    }
+  if(convertToRoman(value ==='' )) {                                      
+    output.innerHTML = "please enter a valid number";
+  }
     if(convertToRoman(value >= 1 && value <= 3999 )) {                                      
       output.innerHTML = convertToRoman(value);   
     } else if(value < 0){
