@@ -36,7 +36,6 @@ body {
 .welcome-section {
   grid-column: 1; 
   grid-row: 1;
-  
   font-size: 1.5vw;
   z-index: 2;
 }  
@@ -58,11 +57,9 @@ body {
   width: 35vw;
   height: 2vw;
   text-align: center;
-  
   background-color: transparent;
   color: white;
   padding: 0.25rem 0.75rem;
-
   border-top: 2px solid #404040;
   border-bottom: 2px solid #404040;
   border-right: none;
@@ -91,14 +88,12 @@ body {
 #convert-btn:hover{
   background-color: transparent;
   color: #00aced;
-  box-shadow: 0 5px 3px -3px #00aced, 0 -5px 3px -3px #00aced,
-    0 5px 3px -3px #00aced, 0 -5px 3px -3px #00aced;
+  box-shadow: 0 5px 3px -3px #00aced;
 }
 
 .romanResult {
   width: 45vw; 
   height: 40vw;
-  
   position: absolute;
   left: 50vw;
   top: 2vw;
@@ -109,12 +104,10 @@ body {
   height: auto; 
   margin-top: 17vw;
   text-align: center;
-  
   font-size: 5vw;
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 5px;
   line-height: 0.8;
   color: white;
-
   z-index: 2;
 }
