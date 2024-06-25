@@ -1,24 +1,23 @@
 body {
-    font-family: 'nunito';
-    color: white;
-    background-image: url(./assets/black.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  font-family: 'nunito';
+  color: white;
+  background-image: url(./assets/black.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #background {
   width: 100%; 
   height: auto;
-  position: absolute; 
-
+  position: absolute;
   left: 0px; 
   top: 0px; 
   z-index: -1; 
 }
 
 .stretch {
- width:100%;
- height:auto;
+  width:100%;
+  height:auto;
 }
 
 .body_Grid {
@@ -26,13 +25,11 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0px;
-  
   width: 45vw; 
   height: 15vw;
   position: absolute;
   left: 7vw;
   top: 15vw;
-  
   z-index: 2;
 }
 
@@ -118,6 +115,6 @@ body {
   letter-spacing: 5px;
   line-height: 0.8;
   color: white;
-  
+
   z-index: 2;
 }
