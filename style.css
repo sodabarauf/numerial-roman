@@ -78,7 +78,7 @@ body {
   border: none;
   z-index: 2;
   -webkit-transition: all 0.3s linear;
-	transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #convert-btn:hover {
