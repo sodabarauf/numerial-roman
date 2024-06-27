@@ -8,13 +8,10 @@ body {
 #background {
   width: 100%;
   height: auto;
-
   position: absolute;
   left: 0px;
-
   top: 0px;
   z-index: -1;
-
 }
 
 .stretch {
@@ -26,7 +23,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
   grid-gap: 0px;
   width: 45vw;
   height: 15vw;
@@ -38,7 +34,6 @@ body {
 
 .welcome-section {
   grid-column: 1;
-
   grid-row: 1;
   font-size: 1.5vw;
   z-index: 2;
@@ -54,7 +49,6 @@ body {
   grid-column: 1;
   grid-row: 3;
   z-index: 2;
-
 }
 
 #number {
