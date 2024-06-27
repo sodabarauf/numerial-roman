@@ -1,44 +1,49 @@
-function convertToRoman(num) {
-  const map = {
-    M: 1000, 
-    CM: 900, 
-    D: 500, 
-    CD: 400, 
-    C: 100, 
-    XC: 90, 
-    L: 50, 
-    XL: 40, 
-    X: 10, 
-    IX: 9, 
-    V: 5, 
-    IV: 4, 
-    I: 1,
-  };
+const numberInput = document.getElementById("number");
+const convertBtn = document.getElementById("convert-btn");
+const outputElement = document.getElementById("output");
 
-  let roman = '';                    
-  for (const i in map) {                 
-    while (num >= map[i]) {            
-      roman += i;                   
-      num -= map[i];                   
+function convertToRoman(num) {
+  const romanNumerals = [
+    { value: 1000, symbol: "M" },
+    { value: 900, symbol: "CM" },
+    { value: 500, symbol: "D" },
+    { value: 400, symbol: "CD" },
+    { value: 100, symbol: "C" },
+    { value: 90, symbol: "XC" },
+    { value: 50, symbol: "L" },
+    { value: 40, symbol: "XL" },
+    { value: 10, symbol: "X" },
+    { value: 9, symbol: "IX" },
+    { value: 5, symbol: "V" },
+    { value: 4, symbol: "IV" },
+    { value: 1, symbol: "I" },
+  ];
+
+  let result = "";
+
+  for (let i = 0; i < romanNumerals.length; i++) {
+    while (num >= romanNumerals[i].value) {
+      result += romanNumerals[i].symbol;
+
+      num -= romanNumerals[i].value;
     }
   }
-  return roman;                        
+
+  return result;
 }
 
-const convertBtnEvent = document.getElementById('convert-btn');      
+convertBtn.addEventListener("click", (e) => {
+  const inputValue = parseInt(numberInput.value);
 
-convertBtnEvent.addEventListener('click', function () {
-  const value = document.getElementById('number').value;
-  const output = document.getElementById('output');       
-
-  if (convertToRoman(value === '' )){                                   
-    output.innerHTML = 'please enter a valid number';
+  if (isNaN(inputValue)) {
+    outputElement.textContent = "Please enter a valid number";
+  } else if (inputValue < 1) {
+    outputElement.textContent =
+      "Please enter a number greater than or equal to 1";
+  } else if (inputValue > 3999) {
+    outputElement.textContent =
+      "Please enter a number less than or equal to 3999";
+  } else {
+    outputElement.textContent = convertToRoman(inputValue);
   }
-  if (convertToRoman(value >= 1 && value <= 3999 )){                                 
-    output.innerHTML = convertToRoman(value);
-  } else if (value < 0) {
-    output.textContent = 'Please enter a number greater than or equal to 1';
-  } else if (value >= 4000) {
-    output.textContent = 'Please enter a number less than or equal to 3999';
-  }  
 });
