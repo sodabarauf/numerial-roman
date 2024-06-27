@@ -35,7 +35,7 @@ function convertToRoman(num) {
 convertBtn.addEventListener('click', () => {
   const inputValue = parseInt(numberInput.value);
 
-  if (isNaN(inputValue)) {
+  if (Number.isNaN(inputValue)) {
     outputElement.textContent = 'Please enter a valid number';
   } else if (inputValue < 1) {
     outputElement.textContent = 'Please enter a number greater than or equal to 1';
