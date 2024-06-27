@@ -33,7 +33,8 @@ function convertToRoman(num) {
 }
 
 convertBtn.addEventListener('click', () => {
-  const inputValue = parseInt(numberInput.value);
+  const inputValue = document.getElementById('number').value;
+  const output = document.getElementById('output');  
 
   if (Number.isNaN(inputValue)) {
     outputElement.textContent = 'Please enter a valid number';
