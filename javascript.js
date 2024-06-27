@@ -33,9 +33,9 @@ function convertToRoman(num) {
 convertBtn.addEventListener('click', () => {
   const value = document.getElementById('number').value;
   const output = document.getElementById('output');
-  if (convertToRoman(value === '')) {                               
+  if (convertToRoman(value === '')) {                           
     output.innerHTML = 'please enter a valid number';
-  }if (convertToRoman(value >= 1 && value <= 3999)) {                               
+  } if (convertToRoman(value >= 1 && value <= 3999)) {                        
     output.innerHTML = convertToRoman(value);
   } else if (value < 0) {
     output.textContent = 'Please enter a number greater than or equal to 1';
