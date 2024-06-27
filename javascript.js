@@ -1,5 +1,4 @@
 const convertBtn = document.getElementById('convert-btn');
-
 function convertToRoman(num) {
   const romanNumerals = [
     { value: 1000, symbol: 'M' },
@@ -29,10 +28,10 @@ function convertToRoman(num) {
 
   return result;
 }
-
 convertBtn.addEventListener('click', () => {
   const value = document.getElementById('number').value;
   const output = document.getElementById('output');
+
   if (convertToRoman(value === '')) {                
     output.innerHTML = 'please enter a valid number';
   } if (convertToRoman(value >= 1 && value <= 3999)) {                   
