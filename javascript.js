@@ -32,15 +32,18 @@ function convertToRoman(num) {
 }
 
 convertBtn.addEventListener('click', () => {
-  const inputValue = document.getElementById('number').value;
+  const value = document.getElementById('number').value; 
+  const output = document.getElementById('output');         
 
-  if (Number.isNaN(inputValue)) {
-    outputElement.textContent = 'Please enter a valid number';
-  } else if (inputValue < 1) {
-    outputElement.textContent = 'Please enter a number greater than or equal to 1';
-  } else if (inputValue > 3999) {
-    outputElement.textContent = 'Please enter a number less than or equal to 3999';
-  } else {
-    outputElement.textContent = convertToRoman(inputValue);
+  if(convertToRoman(value ==='' )) {                                      
+    output.innerHTML = "please enter a valid number";
   }
+  if(convertToRoman(value >= 1 && value <= 3999 )) {                                      
+    output.innerHTML = convertToRoman(value);   
+  } else if(value < 0){
+      return output.textContent = "Please enter a number greater than or equal to 1";
+  } else if(value >= 4000) {
+      return output.textContent = "Please enter a number less than or equal to 3999";
+  }
+  
 });
