@@ -26,3 +26,13 @@ function convertToRoman() {
     }
   }
 }
+
+window.addEventListener('load', () => {
+  output.style.padding = '0px';
+});
+convertBtn.addEventListener('click', convertToRoman);
+number.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    convertToRoman();
+  }
+});
