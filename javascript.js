@@ -28,6 +28,11 @@ function convertToRoman(num) {
 
   return result;
 }
+
+console.log(convertToRoman(55));
+
+const convertBtnEvent = document.getElementById('convert-btn');
+
 convertBtn.addEventListener('click', () => {
   const value = document.getElementById('number').value;
   const output = document.getElementById('output');
