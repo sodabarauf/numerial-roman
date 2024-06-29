@@ -108,30 +108,38 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   body {
-    margin: 10px;
+    height: 932px;
+    position: relative;
   }
 
   h1 {
-    font-size: 15px;
-    position: relative;
+    font-size: 50px;
+    position: absolute;
     display: contents;
   }
 
-  .text_Box {
-    margin: 5px;
-    padding: 10px;
+  #number {
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
   }
 
   #convert-btn {
-    margin: 5px;
-    width: 100px;
-    height: 20px;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   #output {
-    text-align: center;
-    font-size: 4vw;
+    font-size: 50px;
+    position: absolute;
+    margin-top: 500px;
   }
 }
