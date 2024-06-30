@@ -148,4 +148,26 @@ body {
     height: 1300px;
     position: relative;
   }
+
+  h1 {
+    font-size: 50px;
+    position: absolute;
+    display: contents;
+  }
+
+  #number {
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  #convert-btn {
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
 }
