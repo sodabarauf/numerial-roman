@@ -142,3 +142,10 @@ body {
     margin-top: 500px;
   }
 }
+
+@media (max-width: 1024px) {
+  body {
+    height: 1300px;
+    position: relative;
+  }
+}
